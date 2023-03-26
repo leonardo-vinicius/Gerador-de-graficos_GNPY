@@ -11,6 +11,8 @@ def gerar_graficos(CHPout_AM, CHPout_PM, GSNR_AM, GSNR_PM, n_span, n_km, n_canai
     menor_valorPout = min(min(CHPout_AM), min(CHPout_PM)) - espacamento
     maior_valorPout = max(max(CHPout_AM), max(CHPout_PM)) + espacamento
 
+    print(n_span)
+
     if n_km == '1':
         n_km = '11'
 
@@ -61,3 +63,4 @@ def gerar_graficos(CHPout_AM, CHPout_PM, GSNR_AM, GSNR_PM, n_span, n_km, n_canai
     print(directory_path)
     nome = 'Grafico_' + n_canais + '0ch_' + n_span + '_Span_' + n_km + '0Km'
     Image = plt.savefig(f'{directory_path}/{nome}.png')
+    #print(directory_path + Image)

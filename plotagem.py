@@ -69,15 +69,17 @@ dic = {
             '1_span_90_80': ['1_spans_90.0 Km_new_model_example_80ch.csv', '1_spans_90.0 Km_EDFA_PADTEC_AdvancedModel_80ch.csv'],
             '1_span_110_40': ['1_spans_110.0 Km_new_model_example_40ch.csv', '1_spans_110.0 Km_EDFA_PADTEC_AdvancedModel_40ch.csv'],
             '1_span_110_80': ['1_spans_110.0 Km_new_model_example_80ch.csv', '1_spans_110.0 Km_EDFA_PADTEC_AdvancedModel_80ch.csv'],
-            '4_span_70_40': ['1_spans_70.0 Km_new_model_example_40ch.csv', '4_spans_70.0 Km_EDFA_PADTEC_AdvancedModel_40ch.csv'],
-            '4_span_70_80': ['1_spans_70.0 Km_new_model_example_80ch.csv', '4_spans_70.0 Km_EDFA_PADTEC_AdvancedModel_80ch.csv'],
-            '4_span_90_40': ['1_spans_90.0 Km_new_model_example_40ch.csv', '4_spans_90.0 Km_EDFA_PADTEC_AdvancedModel_40ch.csv'],
-            '4_span_90_80': ['1_spans_90.0 Km_new_model_example_80ch.csv', '4_spans_90.0 Km_EDFA_PADTEC_AdvancedModel_80ch.csv'],
-            '4_span_110_40': ['1_spans_110.0 Km_new_model_example_40ch.csv', '4_spans_110.0 Km_EDFA_PADTEC_AdvancedModel_40ch.csv'],
-            '4_span_110_80': ['1_spans_110.0 Km_new_model_example_80ch.csv', '4_spans_110.0 Km_EDFA_PADTEC_AdvancedModel_80ch.csv']
+            '4_span_70_40': ['4_spans_70.0 Km_new_model_example_40ch.csv', '4_spans_70.0 Km_EDFA_PADTEC_AdvancedModel_40ch.csv'],
+            '4_span_70_80': ['4_spans_70.0 Km_new_model_example_80ch.csv', '4_spans_70.0 Km_EDFA_PADTEC_AdvancedModel_80ch.csv'],
+            '4_span_90_40': ['4_spans_90.0 Km_new_model_example_40ch.csv', '4_spans_90.0 Km_EDFA_PADTEC_AdvancedModel_40ch.csv'],
+            '4_span_90_80': ['4_spans_90.0 Km_new_model_example_80ch.csv', '4_spans_90.0 Km_EDFA_PADTEC_AdvancedModel_80ch.csv'],
+            '4_span_110_40': ['4_spans_110.0 Km_new_model_example_40ch.csv', '4_spans_110.0 Km_EDFA_PADTEC_AdvancedModel_40ch.csv'],
+            '4_span_110_80': ['4_spans_110.0 Km_new_model_example_80ch.csv', '4_spans_110.0 Km_EDFA_PADTEC_AdvancedModel_80ch.csv']
         }
 
 for chave, valor in dic.items():
     print(f"Chave = {chave} - Valor 1 = {valor[0]} - Valor 2 = {valor[1]}")
-    print("Gerando grafico...\n")
+    print(f"Gerando grafico...{chave}\n")
     passar_parametros(chave, valor[0], valor[1])
+
+#passar_parametros(dic[''], valor1, valor2)
