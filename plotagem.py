@@ -43,8 +43,9 @@ def abrir_arquivo(arquivo_AM, arquivo_PM, n_span, n_km, n_canais):
             linhas += 1
     print(f'acabou. lidas {linhas} lidas.\n gerando grafico.')
 
-    grafico.gerar_graficos(CHPout_AM1, CHPout_PM1, GSNR_AM1, GSNR_PM1, n_span, n_km, n_canais)
 
+    grafico.gerar_graficos(CHPout_AM1, CHPout_PM1, 'Channel Power', n_span, n_km, n_canais)
+    grafico.gerar_graficos(GSNR_AM1, GSNR_PM1, 'GSNR', n_span, n_km, n_canais)
 
 for file in files:
     arquivo.append(file) 
@@ -81,5 +82,3 @@ for chave, valor in dic.items():
     print(f"Chave = {chave} - Valor 1 = {valor[0]} - Valor 2 = {valor[1]}")
     print(f"Gerando grafico...{chave}\n")
     passar_parametros(chave, valor[0], valor[1])
-
-#passar_parametros(dic[''], valor1, valor2)
