@@ -42,7 +42,7 @@ def gerar_graficos(file_AM, file_PM, flag, n_span, n_km, n_canais):
     ##### Para deixar versão png desmarcar linha 46 e marcar linha 45 e desmarcar linha 51 e marcar linha 50
 
     current_path = os.path.dirname(os.path.realpath(__file__))
-    directory_path = current_path + "/graficos_gerados_pdf/"
+    directory_path = current_path + "/graficos_gerados_pdf/edfa2/"
     #directory_path = current_path + "/graficos_gerados_png/"
 
     print(directory_path)
