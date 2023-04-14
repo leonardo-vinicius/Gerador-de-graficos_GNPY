@@ -26,7 +26,7 @@ def gerar_graficos(file_AM, file_PM, flag, n_span, n_km, n_canais):
     plot1 = fig.add_subplot()
     plot1 = plt.subplot()
     plot1.grid(True, linestyle=':', linewidth=0.5)
-    plot1.scatter(x, file_PM, color= 'blue', label = 'Power Mask GNPy', linewidth=0.5, edgecolors='azure')
+    plot1.scatter(x, file_PM, color= 'blue', label = 'Power Mask Model', linewidth=0.5, edgecolors='azure')
     plt.plot(x,file_PM,color='purple', alpha=0.5) # antes tava azure mas o fundo é claro agora
     plot1.scatter(x, file_AM, color= 'gold', label = 'Advanced Model GNPy', linewidth=0.5, edgecolors='orange')
     plot1.tick_params(labelsize=14) ##
@@ -42,8 +42,8 @@ def gerar_graficos(file_AM, file_PM, flag, n_span, n_km, n_canais):
     ##### Para deixar versão png desmarcar linha 46 e marcar linha 45 e desmarcar linha 51 e marcar linha 50
 
     current_path = os.path.dirname(os.path.realpath(__file__))
-    directory_path = current_path + "/graficos_gerados_pdf/edfa2/"
-    #directory_path = current_path + "/graficos_gerados_png/"
+    #directory_path = current_path + "/graficos_gerados_pdf/edfa2/"
+    directory_path = current_path + "/graficos_gerados_pdf/edfa1/"
 
     print(directory_path)
     nome = 'Grafico_' + flag + '_' + n_canais + '0ch_' + n_span + '_Span_' + n_km + '0Km'
